@@ -1,8 +1,12 @@
-function Task(props) {
+import { FaTimes } from "react-icons/fa";
+
+function Task({ task }) {
   return (
     <div className="task">
-      <h3>{props.task.text}</h3>
-      <p>{props.task.day}</p>
+      <h3>
+        {task.text} <FaTimes style={{}} />
+      </h3>
+      <p>{task.day}</p>
     </div>
   );
 }

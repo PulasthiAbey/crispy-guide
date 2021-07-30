@@ -1,10 +1,10 @@
 import Task from "./Task";
 
-function Tasks(props) {
+function Tasks({ tasks }) {
   return (
     <>
-      {props.tasks.map((task) => (
-        <Task key={props.task.id} task={props.task} />
+      {tasks.map((tasks) => (
+        <Task key={tasks.id} task={tasks} />
       ))}
     </>
   );
