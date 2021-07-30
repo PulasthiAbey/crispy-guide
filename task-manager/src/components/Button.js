@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 function Button(props) {
   return (
     <div>
@@ -7,5 +8,14 @@ function Button(props) {
     </div>
   );
 }
+
+Button.defaultProps = {
+  color: "steelblue",
+};
+
+Button.propTypes = {
+  text: PropTypes.string,
+  color: PropTypes.string,
+};
 
 export default Button;
