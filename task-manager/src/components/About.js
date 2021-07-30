@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div>
+    <div align="center">
       <h4>Version 1.0.0</h4>
-      <Link href="/">Go Back</Link>
+      <Link to="/">Go Back</Link>
     </div>
   );
 }
